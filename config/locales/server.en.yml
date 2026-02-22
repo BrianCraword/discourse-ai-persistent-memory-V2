@@ -1,0 +1,15 @@
+en:
+  site_settings:
+    ai_persistent_memory_enabled: "Enable persistent AI memory for users across conversations."
+    ai_persistent_memory_llm_model_id: "LLM Model ID to use for memory summarization and consolidation. Use a fast, inexpensive model."
+    ai_persistent_memory_max_memories: "Maximum number of memory entries per user."
+    ai_persistent_memory_max_value_length: "Maximum character length for a single memory value."
+    ai_persistent_memory_consolidation_target: "Target number of memories after consolidation runs."
+  discourse_ai_persistent_memory:
+    errors:
+      key_required: "Memory key is required."
+      value_required: "Memory value is required."
+      value_too_long: "Memory value exceeds the maximum length of %{max} characters."
+      limit_reached: "Memory limit of %{max} reached. Remove existing memories first."
+      no_user_context: "No user context available."
+      llm_not_configured: "No LLM model configured for AI memory operations. Set ai_persistent_memory_llm_model_id in settings."

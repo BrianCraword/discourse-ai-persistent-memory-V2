@@ -1,0 +1,132 @@
+.user-ai-memories {
+  margin-top: 1em;
+
+  .desc {
+    color: var(--primary-medium);
+    margin-bottom: 1em;
+  }
+
+  .memory-status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    padding: 0.5em 0.75em;
+    background: var(--primary-very-low);
+    border-radius: 4px;
+
+    .memory-count {
+      font-weight: 600;
+      font-size: 0.9em;
+      color: var(--primary-high);
+    }
+
+    .toggle-summary {
+      font-size: 0.85em;
+    }
+  }
+
+  .memory-summary-panel {
+    background: var(--tertiary-very-low);
+    border: 1px solid var(--tertiary-low);
+    border-radius: 6px;
+    padding: 1em;
+    margin-bottom: 1.5em;
+
+    h4 {
+      margin: 0 0 0.5em 0;
+      font-size: 0.9em;
+      font-weight: 600;
+      color: var(--tertiary);
+    }
+
+    .summary-text {
+      margin: 0;
+      line-height: 1.5;
+      color: var(--primary-high);
+      font-size: 0.95em;
+    }
+
+    .summary-empty {
+      margin: 0;
+      color: var(--primary-medium);
+      font-style: italic;
+    }
+  }
+
+  .memory-filter {
+    margin-bottom: 0.75em;
+
+    .memory-filter-input {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  .memories-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+
+    th,
+    td {
+      padding: 0.5em;
+      text-align: left;
+      border-bottom: 1px solid var(--primary-low);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--primary-high);
+    }
+
+    td code {
+      background: var(--primary-very-low);
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+
+    td:last-child {
+      width: 50px;
+      text-align: center;
+    }
+  }
+
+  .no-memories {
+    color: var(--primary-medium);
+    font-style: italic;
+    margin-bottom: 1.5em;
+  }
+
+  .limit-warning {
+    color: var(--danger);
+    font-weight: 600;
+    padding: 0.75em;
+    background: var(--danger-low);
+    border-radius: 4px;
+    margin-top: 1em;
+  }
+
+  .add-memory {
+    border-top: 1px solid var(--primary-low);
+    padding-top: 1em;
+
+    h4 {
+      margin: 0 0 0.75em 0;
+      font-size: 1em;
+      font-weight: 600;
+    }
+  }
+
+  .memory-form {
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+
+    input {
+      flex: 1;
+      min-width: 150px;
+    }
+  }
+}

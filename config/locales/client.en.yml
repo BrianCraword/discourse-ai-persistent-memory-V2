@@ -1,0 +1,16 @@
+en:
+  js:
+    ai_persistent_memory:
+      title: "AI Memory"
+      description: "Your AI assistant remembers these facts about you across conversations. You can view, add, or remove memories here. A compressed summary of your memories is automatically included in every AI conversation."
+      empty: "No memories stored yet. The AI will save important information as you chat."
+      add_new: "Add a memory"
+      key: "Key"
+      value: "Value"
+      key_placeholder: "e.g., bible_preference"
+      value_placeholder: "e.g., KJV"
+      save: "Save"
+      count_label: "memories"
+      limit_reached: "Memory limit reached. Remove existing memories or wait for automatic consolidation."
+      summary_label: "Current AI Summary"
+      summary_empty: "Summary will be generated after your first memory is saved."
