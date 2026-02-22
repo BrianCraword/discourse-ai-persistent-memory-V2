@@ -34,8 +34,7 @@ module DiscourseAiPersistentMemory
     end
 
     def framework_script
-      original_script = super
-      original_script.sub("const context =", "#{MEMORY_JS}\n        const context =")
+      super + "\n" + MEMORY_JS
     end
 
     private
