@@ -9,8 +9,6 @@
 
 enabled_site_setting :ai_persistent_memory_enabled
 
-register_asset "stylesheets/ai-memories.scss"
-
 module ::DiscourseAiPersistentMemory
   PLUGIN_NAME = "discourse-ai-persistent-memory"
 end

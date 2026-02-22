@@ -4,8 +4,6 @@ plugins:
     client: true
   ai_persistent_memory_llm_model_id:
     default: ""
-    type: string
-    description: "The ID of the LlmModel to use for memory summarization and consolidation. Set this to a fast, inexpensive model (e.g., Claude Haiku, Gemini Flash). Find the ID in Admin → AI → LLMs."
   ai_persistent_memory_max_memories:
     default: 100
     min: 10
