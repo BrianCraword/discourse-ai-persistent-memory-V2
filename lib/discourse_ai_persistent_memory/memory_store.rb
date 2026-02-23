@@ -41,7 +41,7 @@ module DiscourseAiPersistentMemory
       return [] unless user_id
       PluginStoreRow
         .where(plugin_name: namespace(user_id))
-        .where.not("key LIKE ?", "#{SYSTEM_KEY_PREFIX}%")
+        .where.not("key LIKE ?", "\\_%" )
         .pluck(:key, :value)
         .map { |k, v| { "key" => k, "value" => v } }
     end
@@ -59,7 +59,7 @@ module DiscourseAiPersistentMemory
     def self.memory_count(user_id)
       PluginStoreRow
         .where(plugin_name: namespace(user_id))
-        .where.not("key LIKE ?", "#{SYSTEM_KEY_PREFIX}%")
+        .where.not("key LIKE ?", "\\_%" )
         .count
     end
 
@@ -82,7 +82,7 @@ module DiscourseAiPersistentMemory
       # Remove all non-system keys
       PluginStoreRow
         .where(plugin_name: ns)
-        .where.not("key LIKE ?", "#{SYSTEM_KEY_PREFIX}%")
+        .where.not("key LIKE ?", "\\_%" )
         .delete_all
 
       # Write consolidated memories
