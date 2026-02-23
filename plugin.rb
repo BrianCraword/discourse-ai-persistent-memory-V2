@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-# name: discourse-ai-persistent-memory
+# name: discourse-ai-persistent-memory-V2
 # about: Persistent cross-conversation memory for Discourse AI personas
-# version: 1.0.0
+# version: 2.0.0
 # authors: crawf
-# url: https://github.com/BrianCraword/discourse-ai-persistent-memory
+# url: https://github.com/BrianCraword/discourse-ai-persistent-memory-V2
 # required_version: 2.7.0
 
 enabled_site_setting :ai_persistent_memory_enabled
@@ -12,7 +12,7 @@ enabled_site_setting :ai_persistent_memory_enabled
 register_asset "stylesheets/ai-memories.scss"
 
 module ::DiscourseAiPersistentMemory
-  PLUGIN_NAME = "discourse-ai-persistent-memory"
+  PLUGIN_NAME = "discourse-ai-persistent-memory-V2"
 end
 
 require_relative "lib/discourse_ai_persistent_memory/engine"
